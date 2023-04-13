@@ -2,12 +2,11 @@ import React from "react";
 
 const Shoe = (props) => {
   return (
-    <div className="Shoe">
-      <figure>
-        <img src={props.img} alt={props.style} />
-        <figcaption>{props.style}</figcaption>
-      </figure>
-    </div>
+    <figure className="Shoe">
+      <figcaption>{props.style}</figcaption>
+      <img src={props.img} alt={props.style} />
+      <figcaption>$ {props.price}</figcaption>
+    </figure>
   );
 };
 export default Shoe;

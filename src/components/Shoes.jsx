@@ -6,8 +6,8 @@ const Shoes = (props) => {
     <main>
       <section className="shoes-wrapper">
         <div className="row">
-          {props.items.map((shoe) => (
-            <div className="col">
+          {props.items.map((shoe, index) => (
+            <div className="col-3" key={index}>
               <Shoe style={shoe.style} img={shoe.img} price={shoe.price} />
             </div>
           ))}
